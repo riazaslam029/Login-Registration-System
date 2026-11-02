@@ -1,79 +1,79 @@
-# 🔐 Login & Registration System (C++)
+# Login & Registration System
 
-This is a simple **Login & Registration System** written in **C++** that stores user credentials in a text file (`users.txt`).  
-It allows new users to register and existing users to log in with their credentials.
+A lightweight C++ console application that demonstrates the fundamentals of user registration and credential-based login. User records are stored locally in a plain-text file for educational purposes.
 
----
+## Features
 
-## 📌 Features
-- Register new users with a **username & password**
-- Prevents duplicate usernames
-- Stores credentials in a **text file**
-- Allows existing users to **login**
-- Simple **menu-driven interface**
+- Register new users with a username and password
+- Prevent duplicate usernames
+- Authenticate existing users
+- Persist user records in `users.txt`
+- Simple menu-driven console interface
 
----
+## Technology
 
-## 🖥️ Example Run
---- Login & Registration System ---
+- C++
+- Visual Studio 2022
+- MSVC v143 toolset
+- Windows console application
 
-Register
+## Getting Started
 
-Login
+### Prerequisites
 
-Exit
-Enter your choice: 1
-Enter a new username: alice
-Enter password: 1234
-✅ Registration successful!
+- Windows
+- Visual Studio 2022 with the **Desktop development with C++** workload
 
---- Login & Registration System ---
+### Build and run
 
-Register
+1. Clone the repository:
 
-Login
-
-Exit
-Enter your choice: 2
-Enter username: alice
-Enter password: 1234
-✅ Login successful! Welcome, alice.
-
-yaml
-Copy code
-
----
-
-## 🚀 How to Run
-1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/login-system-cpp.git
-Navigate into the project folder:
+   git clone https://github.com/riazaslam029/Login-Registration-System.git
+   cd Login-Registration-System
+   ```
 
-bash
-Copy code
-cd login-system-cpp
-Compile the program:
+2. Open `Project4.sln` in Visual Studio.
+3. Select the `Debug` or `Release` configuration and the appropriate platform (`Win32` or `x64`).
+4. Build the solution with **Build > Build Solution**.
+5. Run the application with **Debug > Start Without Debugging** (`Ctrl+F5`).
 
-bash
-Copy code
-g++ login.cpp -o login
-Run the program:
+The application creates `users.txt` in its working directory when the first user is registered.
 
-bash
-Copy code
-./login
-📂 Files
-login.cpp → Main C++ source code
+## Usage
 
-users.txt → File to store usernames & passwords (created automatically if it doesn’t exist)
+When the program starts, choose one of the available actions:
 
-README.md → Documentation
+```text
+--- Login & Registration System ---
+1. Register
+2. Login
+3. Exit
+```
 
-⚡ Requirements
-C++ compiler (e.g., g++, clang++, or MSVC)
+Follow the prompts to register a new account or authenticate an existing one.
 
-File handling support enabled
+## Project Structure
 
-📜 License
-This project is open-source and available under the MIT License.
+```text
+.
+├── Project4.sln
+├── Project4/
+│   ├── Login & Registration system.cpp
+│   ├── Project4.vcxproj
+│   └── Project4.vcxproj.filters
+├── .gitignore
+└── README.md
+```
+
+## Security Notice
+
+This project is intended for learning and demonstration only. Passwords are stored in plain text and are not suitable for production use. A production authentication system should use a vetted password-hashing algorithm, secure secret handling, input validation, access controls, and a protected database.
+
+## Contributing
+
+Contributions are welcome. Please open an issue to discuss a significant change before submitting a pull request.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
