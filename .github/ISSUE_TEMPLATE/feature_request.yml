@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest an improvement for the project.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Problem or opportunity
+      description: What user need or learning goal would this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
